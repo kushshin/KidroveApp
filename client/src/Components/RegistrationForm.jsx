@@ -56,7 +56,7 @@ function RegistrationForm() {
       "https://kidroveapp.onrender.com/api/enquiry",
       form
     );
-console.log(res.data)
+// console.log(res.data)
     toast.success(res.data);
 
     setForm({name: "",email: "",phone: "",});
