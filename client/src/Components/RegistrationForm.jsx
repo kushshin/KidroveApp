@@ -53,7 +53,7 @@ function RegistrationForm() {
 
   try {
     const res = await axios.post(
-      "http://localhost:3000/api/enquiry",
+      "https://kidroveapp.onrender.com/api/enquiry",
       form
     );
 console.log(res.data)

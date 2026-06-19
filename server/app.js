@@ -9,7 +9,10 @@ dotenv.config()
 
 const PORT = process.env.PORT || 3000
 
-app.use(cors())
+app.use(cors(
+    {origin: "https://kidrove-app.vercel.app/",
+        methods: ["GET", "POST", "PUT", "PATCH", "DELETE"]}
+))
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use('/api',enquiryRouter)
