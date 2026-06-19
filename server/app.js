@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3000
 
 app.use(cors(
     {origin: "https://kidrove-app.vercel.app/",
-        methods: ["GET", "POST", "PUT", "PATCH", "DELETE"]}
+        methods: ["GET", "POST", "PUT", "PATCH", "DELETE"], credentials: true}
 ))
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
